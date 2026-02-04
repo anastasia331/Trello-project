@@ -46,8 +46,27 @@
                 <button class="btn btn__DeleteAll btn__full">Delete all</button>
             </section>
         </main>
-
-       
+ 
+    </div>
+    <div id="modal__overlay" class="modal__overlay" style="display: none;">
+        <div class="modal">
+            <input type="text" id="todo-title" class="modal__input" placeholder="Title">
+            <textarea id="todo-desc" class="modal__textarea" placeholder="Description"></textarea>
+            <select id="todo-user" class="modal__user">
+                <option value="" disabled selected>Ответственный</option>
+            </select>
+    
+            <select class="modal__priority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+    
+            <div class="modal__buttons">
+                <button id="modal-cancel" class="btn">Cancel</button>
+                <button id="modal-confirm" class="btn btn__confirm">Confirm</button>
+            </div>
+        </div>
     </div>
     
 
